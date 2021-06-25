@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p, li, a{
+    color: #252525;
+}
+p{
+    line-height: 28px;
+}
+a{
+    text-decoration: none;
+}
+img, svg{
+    max-width: 100%;
+}
+.container{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.menu-right ul, .menu-left ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu-right ul li, .menu-left ul li{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, color 0.2s 0.3s;
+    cursor: pointer;
+}
+.menu-right ul li:first-child, .menu-left ul li:first-child{
+    margin-left: 0;
+}
+.menu-right ul li:hover, .menu-left ul li:hover{
+    color: #777569;
+}
+.logo-box{
+    flex:1;
+    padding: 5px 0;
+    height: 80px;
+}
+.logo-box img{
+    max-height: 100%;
+}
+.skew-box{
+    height: 300px;
+    width: 100px;
+    transform: skew(0deg, 20deg);
+    background-color: yellow;
+}
